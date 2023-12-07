@@ -1,19 +1,28 @@
-<div class="container-fluid py-3 text-light" style="background-color: black;">
-  <div class="row px-5 d-flex align-items-baseline">
-    <div class="col d-flex">
-        <div>
-          <a class="navbar-brand me-5" href="/home-page">Home</a>
-        </div>
-       
-        <div>
-          <a class="navbar-brand" href="/main-page">Movies</a>
-        </div>
-    </div>
-    <div class="col text-center">
+<nav class="navbar navbar-expand-lg px-4" style="background-color: black;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
       <img src="/assets/YTS_logo.png" alt="" height="80" width="140" class="rounded-pill">
-    </div>
-    <div class="col text-end">
-      <a href="/watchlist" class="btn btn-primary rounded-pill py-3 px-4" style="font-size: 14px;">View My Watchlist</a>
+    </a>
+    <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-end text-light" aria-current="page" href="/home-page">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light text-end " href="/main-page">Movies</a>
+        </li>
+        <li class="nav-item d-lg-none d-block">
+          <a class="nav-link text-light text-end" href="/watchlist">View My Watchlist</a>
+        </li>
+      </ul>
+      <div class="d-none d-lg-block">
+        <a href="/watchlist" class="btn btn-primary rounded-pill py-3 px-4" style="font-size: 14px;">View My Watchlist</a>
+      </div>
+   
+
     </div>
   </div>
-</div>
+</nav>
